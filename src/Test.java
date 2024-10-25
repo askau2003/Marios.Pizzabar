@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Test {
     private ArrayList<Bestilling> bestillinger;
 
-    public Test(){
+    public Test() {
         bestillinger = new ArrayList<>();
     }
 
@@ -15,7 +15,10 @@ public class Test {
         System.out.print("\n");
         System.out.println("**Bestillingsliste**");
         test.addBestilling("Vesuvio", "11:47", "12:47");
-        test.addBestilling("Amerikaner","12:09","13:09");
+        test.addBestilling("Amerikaner", "12:09", "13:09");
+        test.addBestilling("Carbona", "14:32", "15:32");
+        test.printBestillinger();
+        test.fjernBestilling("11:47");
         test.printBestillinger();
     }
 
@@ -24,9 +27,14 @@ public class Test {
         bestillinger.add(nyBestilling);
     }
 
-    public void printBestillinger(){
+    public void printBestillinger() {
         for (Bestilling bestilling : bestillinger) {
             System.out.println(bestilling);
         }
+    }
+    // Design-mæssigt er der valgt bestillingstidspunkt over pizzanavn. -
+    // Da ordrene gerne skal være unikke for dette løsningsforslag virker.
+    public void fjernBestilling(String bestillingstidspunkt) {
+        bestillinger.removeIf(bestilling -> bestilling.getBestillingsTidspunkt().equals(bestillingstidspunkt));
     }
 }
