@@ -5,7 +5,20 @@ public class Pizza {
     private Double pris;
 
     public Pizza(String pNavn, Double p) {
-        pNavn = pizzaNavn;
-        p = pris;
+        this.pizzaNavn = pNavn;
+        this.pris= p;
+    }
+
+    public String getNavn(){
+        return pizzaNavn;
+    }
+
+    public Double getPris(){
+        return pris;
+    }
+
+    @Override
+    public String toString() {
+        return pizzaNavn + " - Pris: " + pris;
     }
 }
