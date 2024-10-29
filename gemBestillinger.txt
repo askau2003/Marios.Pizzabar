@@ -1,0 +1,16 @@
+Pizza: Amerikaner
+Bestillingstidspunkt: 10:32
+Afhentningstidspunkt: 11:32
+
+Pizza: Vesuvio
+Bestillingstidspunkt: 11:47
+Afhentningstidspunkt: 12:47
+
+Pizza: Amerikaner
+Bestillingstidspunkt: 12:09
+Afhentningstidspunkt: 13:09
+
+Pizza: Cacciatore
+Bestillingstidspunkt: 14:32
+Afhentningstidspunkt: 15:32
+

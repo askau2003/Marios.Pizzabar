@@ -3,6 +3,7 @@ public class Bestilling {
     private String afhentningsTidspunkt;
     private String bestillingsTidspunkt;
     private String pizzaNavn;
+    private boolean erAfhentet;
 
     public Bestilling(String pNavn, String bestTidspunkt, String afhTidspunkt) {
         pizzaNavn = pNavn;
@@ -21,6 +22,14 @@ public class Bestilling {
 
     public String getPizzaNavn() {
         return pizzaNavn;
+    }
+
+    public void setAfhentning(){
+        this.erAfhentet = true;
+    }
+
+    public boolean isAfhentet(){
+        return erAfhentet;
     }
 
     public String toString() {
