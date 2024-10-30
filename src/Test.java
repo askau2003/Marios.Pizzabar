@@ -6,7 +6,6 @@ public class Test {
     private ArrayList<Bestilling> bestillinger;
     private PizzaMenu menu;
     private ArrayList<Kunder> kundeListe;
-    // Privat int discount_amount = 10;
 
     public Test() {
         bestillinger = new ArrayList<>();
@@ -35,7 +34,7 @@ public class Test {
         test.fjernBestilling("11:47");
         test.printBestillinger();
 
-        test.addKunder("Peter Hansen", "Ølstykkevej 12", 10); // Fjerne rabetten da vi altid gir 10% til faste kunder og derfor er det unødvendigt det står der.
+        test.addKunder("Peter Hansen", "Ølstykkevej 12", 10);
         test.printKunder();
     }
 
@@ -47,12 +46,11 @@ public class Test {
     public void printBestillinger() {
         for (Bestilling bestilling : bestillinger) {
             double pris = menu.getPizzaPris(bestilling.getPizzaNavn());
-            // Udskriv i ønsket rækkefølge
             System.out.println("Pizza: " + bestilling.getPizzaNavn());
             System.out.println("Pris: " + (pris >= 0 ? pris + " DKK" : "Ikke tilgængelig"));
             System.out.println("Bestillingstidspunkt: " + bestilling.getBestillingsTidspunkt());
             System.out.println("Afhentningstidspunkt: " + bestilling.getAfhentningsTidspunkt());
-            System.out.println();  // Tom linje mellem bestillinger
+            System.out.println();
         }
     }
 

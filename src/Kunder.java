@@ -6,12 +6,11 @@ public class Kunder {
     public Kunder(String navn, String adresse, int rabat) {
         this.navn = navn;
         this.adresse = adresse;
-        this.rabat = rabat; // Os fjerne
+        this.rabat = rabat;
     }
 
 
     public String toString() {
         return "Navn: " + navn + ", Udbringnings Adresse: " + adresse + ", Rabat: " + rabat;
     }
-
 }

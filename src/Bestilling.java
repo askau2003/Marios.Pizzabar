@@ -28,10 +28,6 @@ public class Bestilling {
         this.erAfhentet = true;
     }
 
-    public boolean isAfhentet(){
-        return erAfhentet;
-    }
-
     public String toString() {
         return "Pizza: " + pizzaNavn + "\n" + "Bestillingstidspunkt: " + bestillingsTidspunkt + "\n" + "Afhentningstidspunkt: " + afhentningsTidspunkt + "\n";
     }
