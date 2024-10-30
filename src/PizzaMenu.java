@@ -37,10 +37,6 @@ public class PizzaMenu {
         pizzaMenu.add(new Pizza("30. Romana: Tomatsauce, ost, skinke, artiskok, oliven og oregano", 71.0));
     }
 
-    public ArrayList<Pizza> getPizzaMenu() {
-        return pizzaMenu;
-    }
-
     public void printMenu() {
         System.out.println("**Menuen**");
         for (Pizza pizza : pizzaMenu) {

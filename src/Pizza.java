@@ -17,7 +17,6 @@ public class Pizza {
         return pris;
     }
 
-    @Override
     public String toString() {
         return pizzaNavn + " - Pris: " + pris;
     }
